@@ -53,7 +53,7 @@ plan-d-action-ia-express/
 ├── style.css    → Styles CSS pour le design et les animations
 ├── script.js    → Logique JavaScript pour la génération du plan d'action
 └── README.md    → Documentation du projet
-
+```
 🛠️ Technologies utilisées
 
 HTML5 : Structure de la page
