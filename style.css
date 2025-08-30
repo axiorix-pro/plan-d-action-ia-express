@@ -1,0 +1,332 @@
+/* Variables CSS pour une gestion centralisée des couleurs et styles */
+:root {
+    --primary-blue: #2563eb;
+    --secondary-blue: #1e40af;
+    --accent-cyan: #06b6d4;
+    --text-dark: #1f2937;
+    --text-gray: #6b7280;
+    --bg-light: #f8fafc;
+    --bg-white: #ffffff;
+    --border-gray: #e5e7eb;
+    --success-green: #10b981;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général du corps de la page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: linear-gradient(135deg, var(--bg-light) 0%, #e0f2fe 100%);
+    min-height: 100vh;
+}
+
+/* Style du conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Style de l'en-tête */
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+.header h1 {
+    color: var(--primary-blue);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style des sections de formulaire */
+.form-section {
+    background: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease;
+}
+
+.form-section:hover {
+    transform: translateY(-2px);
+}
+
+/* Style des titres de section */
+.section-title {
+    color: var(--secondary-blue);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Style des icônes de section */
+.section-icon {
+    width: 24px;
+    height: 24px;
+    background: var(--accent-cyan);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Style des groupes de formulaire */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Style des contrôles de formulaire */
+.form-control {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--border-gray);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--bg-white);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Style des groupes de cases à cocher */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Style des éléments de case à cocher */
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px;
+    border: 2px solid var(--border-gray);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.checkbox-item:hover {
+    border-color: var(--primary-blue);
+    background: rgba(37, 99, 235, 0.05);
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin: 0;
+    transform: scale(1.2);
+}
+
+.checkbox-item input[type="checkbox"]:checked + label {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+/* Style du bouton de génération */
+.generate-btn {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem auto 0;
+}
+
+.generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+}
+
+.generate-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Style de la section des résultats */
+.result-section {
+    background: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-top: 2rem;
+    box-shadow: var(--shadow);
+    display: none;
+}
+
+/* Style de l'en-tête des résultats */
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border-gray);
+}
+
+.result-title {
+    color: var(--success-green);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Style des boutons d'export */
+.export-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.export-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--primary-blue);
+    background: transparent;
+    color: var(--primary-blue);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.export-btn:hover {
+    background: var(--primary-blue);
+    color: white;
+}
+
+/* Style du contenu du plan */
+.plan-content {
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.plan-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-blue);
+}
+
+.plan-section h3 {
+    color: var(--secondary-blue);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.plan-section ul {
+    margin-left: 1rem;
+}
+
+.plan-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Style de la section de chargement */
+.loading {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Style du spinner de chargement */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--border-gray);
+    border-top: 4px solid var(--primary-blue);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+/* Animation du spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Style de la barre de progression */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--border-gray);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-cyan));
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+/* Adaptation pour les écrans mobiles */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .form-section {
+        padding: 1.5rem;
+    }
+
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+
+    .export-buttons {
+        justify-content: center;
+    }
+}
