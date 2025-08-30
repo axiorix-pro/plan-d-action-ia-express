@@ -45,8 +45,9 @@ Consultez et exportez le plan généré dans le format de votre choix.
 
 ---
 
-📂 Structure du projet
+## 📂 Structure du projet
 
+```plaintext
 plan-d-action-ia-express/
 │
 ├── index.html   → Structure HTML de l'application
