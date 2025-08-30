@@ -55,21 +55,19 @@ plan-d-action-ia-express/
 ├── script.js    → Logique JavaScript pour la génération du plan d'action
 └── README.md    → Documentation du projet
 
----
+⚠️ Ne rajoute **pas** un ` ```markdown ` après : ça rouvre un nouveau bloc au lieu de fermer l’ancien.
+::contentReference[oaicite:0]{index=0}
 
-🛠️ Technologies utilisées
+## 🛠️ Technologies utilisées
 
-HTML5 : Structure de la page
-
-CSS3 : Styles et animations
-
-JavaScript : Logique de l'application
-
-docx : Génération de documents Word
+- **HTML5** : Structure de la page  
+- **CSS3** : Styles et animations  
+- **JavaScript** : Logique de l'application  
+- **docx** : Génération de documents Word  
 
 ---
 
-👤 Auteur
+## 👤 Auteur
 
-Ce code est fourni à titre éducatif uniquement.
+Ce code est fourni à titre éducatif uniquement.  
 © 2025 – Aucun lien avec une entreprise spécifique.
