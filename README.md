@@ -44,7 +44,6 @@ Cliquez sur “Générer mon plan d'action”.
 Consultez et exportez le plan généré dans le format de votre choix.
 
 ---
-
 ## 📂 Structure du projet
 
 ```plaintext
@@ -55,19 +54,17 @@ plan-d-action-ia-express/
 ├── script.js    → Logique JavaScript pour la génération du plan d'action
 └── README.md    → Documentation du projet
 
-⚠️ Ne rajoute **pas** un ` ```markdown ` après : ça rouvre un nouveau bloc au lieu de fermer l’ancien.
-::contentReference[oaicite:0]{index=0}
+🛠️ Technologies utilisées
 
-## 🛠️ Technologies utilisées
+HTML5 : Structure de la page
 
-- **HTML5** : Structure de la page  
-- **CSS3** : Styles et animations  
-- **JavaScript** : Logique de l'application  
-- **docx** : Génération de documents Word  
+CSS3 : Styles et animations
 
----
+JavaScript : Logique de l'application
 
-## 👤 Auteur
+docx : Génération de documents Word
 
-Ce code est fourni à titre éducatif uniquement.  
+👤 Auteur
+
+Ce code est fourni à titre éducatif uniquement.
 © 2025 – Aucun lien avec une entreprise spécifique.
