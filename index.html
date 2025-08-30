@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan d'action IA Express</title>
+
+    <!-- Démo technique : Plan d'action IA Express
+         Code fourni à titre éducatif uniquement.
+         © 2025 – Aucun lien avec une entreprise spécifique -->
+
+    <!-- Import de la bibliothèque docx pour la génération de documents -->
+    <script src="https://unpkg.com/docx@8.5.0/build/index.umd.js"></script>
+
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- En-tête -->
+        <div class="header">
+            <h1>🚀 Plan d'action IA Express</h1>
+            <p>Générez votre plan d'automatisation personnalisé en quelques clics. Optimisez vos processus métier avec l'intelligence artificielle.</p>
+        </div>
+
+        <!-- Barre de progression -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <!-- Section : Informations entreprise -->
+        <div class="form-section">
+            <div class="section-title">
+                <div class="section-icon">1</div>
+                Informations entreprise
+            </div>
+            <div class="form-group">
+                <label for="companyName">Nom de l'entreprise</label>
+                <input type="text" id="companyName" class="form-control" placeholder="Ex: TechCorp Solutions">
+            </div>
+            <div class="form-group">
+                <label for="sector">Secteur d'activité</label>
+                <select id="sector" class="form-control">
+                    <option value="">Sélectionnez votre secteur</option>
+                    <option value="service">Services B2B</option>
+                    <option value="ecommerce">E-commerce</option>
+                    <option value="manufacturing">Industrie/Manufacturing</option>
+                    <option value="finance">Finance/Assurance</option>
+                    <option value="healthcare">Santé/Médical</option>
+                    <option value="education">Éducation/Formation</option>
+                    <option value="real-estate">Immobilier</option>
+                    <option value="consulting">Conseil/Expertise</option>
+                    <option value="other">Autre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="teamSize">Taille de l'équipe</label>
+                <select id="teamSize" class="form-control">
+                    <option value="">Sélectionnez la taille</option>
+                    <option value="1-5">1-5 employés</option>
+                    <option value="6-20">6-20 employés</option>
+                    <option value="21-50">21-50 employés</option>
+                    <option value="51-100">51-100 employés</option>
+                    <option value="100+">Plus de 100 employés</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Section : Processus à automatiser -->
+        <div class="form-section">
+            <div class="section-title">
+                <div class="section-icon">2</div>
+                Processus à automatiser
+            </div>
+            <div class="form-group">
+                <label>Quels processus souhaitez-vous automatiser ? (Sélection multiple)</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="emails" value="emails">
+                        <label for="emails">📧 Gestion des e-mails</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="invoicing" value="invoicing">
+                        <label for="invoicing">🧾 Facturation/Devis</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="crm" value="crm">
+                        <label for="crm">👥 Gestion client (CRM)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="inventory" value="inventory">
+                        <label for="inventory">📦 Gestion des stocks</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="support" value="support">
+                        <label for="support">🎧 Support client</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="hr" value="hr">
+                        <label for="hr">👔 Ressources humaines</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="accounting" value="accounting">
+                        <label for="accounting">💰 Comptabilité</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="marketing" value="marketing">
+                        <label for="marketing">📱 Marketing digital</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section : Objectifs et contraintes -->
+        <div class="form-section">
+            <div class="section-title">
+                <div class="section-icon">3</div>
+                Objectifs et contraintes
+            </div>
+            <div class="form-group">
+                <label for="budget">Budget approximatif</label>
+                <select id="budget" class="form-control">
+                    <option value="">Sélectionnez votre budget</option>
+                    <option value="0-1000">0 - 1 000€</option>
+                    <option value="1000-5000">1 000 - 5 000€</option>
+                    <option value="5000-15000">5 000 - 15 000€</option>
+                    <option value="15000+">Plus de 15 000€</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="timeline">Délai souhaité</label>
+                <select id="timeline" class="form-control">
+                    <option value="">Sélectionnez le délai</option>
+                    <option value="immediate">Immédiat (1-2 semaines)</option>
+                    <option value="short">Court terme (1-2 mois)</option>
+                    <option value="medium">Moyen terme (3-6 mois)</option>
+                    <option value="long">Long terme (6+ mois)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="priority">Priorité principale</label>
+                <select id="priority" class="form-control">
+                    <option value="">Sélectionnez votre priorité</option>
+                    <option value="time">Gagner du temps</option>
+                    <option value="cost">Réduire les coûts</option>
+                    <option value="quality">Améliorer la qualité</option>
+                    <option value="growth">Accompagner la croissance</option>
+                    <option value="compliance">Conformité/Traçabilité</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Bouton de génération -->
+        <button class="generate-btn" aria-label="Générer le plan d'action personnalisé" onclick="generatePlan()">
+            ⚡ Générer mon plan d'action
+        </button>
+
+        <!-- Section de chargement -->
+        <div class="loading" id="loadingSection">
+            <div class="spinner"></div>
+            <p>Analyse de vos besoins et génération du plan personnalisé...</p>
+        </div>
+
+        <!-- Section des résultats -->
+        <div class="result-section" id="resultSection">
+            <div class="result-header">
+                <div class="result-title">✅ Plan d'action généré avec succès</div>
+                <div class="export-buttons">
+                    <button class="export-btn" onclick="exportToDOCX()">📝 Export DOCX</button>
+                    <button class="export-btn" onclick="exportToJSON()">💾 Export JSON</button>
+                    <button class="export-btn" onclick="exportToEmail()">📧 Envoyer par email</button>
+                    <button class="export-btn" onclick="copyToClipboard()">📋 Copier</button>
+                </div>
+            </div>
+            <div class="plan-content" id="planContent">
+                <!-- Le contenu sera généré dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
