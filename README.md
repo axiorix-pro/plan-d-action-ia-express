@@ -64,7 +64,7 @@ JavaScript : Logique de l'application
 
 docx : Génération de documents Word
 
-👤 Auteur
+## 👤 Auteur
 
-Ce code est fourni à titre éducatif uniquement.
+Ce code est fourni à titre éducatif uniquement.  
 © 2025 – Aucun lien avec une entreprise spécifique.
