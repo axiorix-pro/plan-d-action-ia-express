@@ -73,21 +73,3 @@ docx : Génération de documents Word
 
 Ce code est fourni à titre éducatif uniquement.
 © 2025 – Aucun lien avec une entreprise spécifique.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
