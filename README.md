@@ -1,6 +1,6 @@
 # Plan d'action IA Express
 
-🚀 **Démonstration en ligne** : https://axiorix0.github.io/plan-d-action-ia-express/
+🚀 **Démonstration en ligne** : [https://axiorix-pro.github.io/plan-d-action-ia-express/](https://axiorix-pro.github.io/plan-d-action-ia-express/)
 
 ---
 
