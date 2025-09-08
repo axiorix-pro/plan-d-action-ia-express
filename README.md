@@ -64,7 +64,17 @@ JavaScript : Logique de l'application
 
 docx : Génération de documents Word
 
-## 👤 Auteur
+---
 
-Ce code est fourni à titre éducatif uniquement.  
-© 2025 – Aucun lien avec une entreprise spécifique.
+## 🧾 Mentions
+
+**Droits** — © 2025 Axiorix. Démonstration non contractuelle ; tous droits réservés.  
+**Responsabilité** — Code fourni « en l’état », sans garantie ; ne pas utiliser tel quel en production.  
+**Affiliation** — Aucune affiliation avec une entreprise spécifique. Les marques citées restent la propriété de leurs titulaires.  
+**Contact** — [Formulaire de contact](https://www.axiorix.com/#contact)
+
+## 🤝 Auteur
+
+**Axiorix** — Cas pratiques & formations IA pour **PME suisses**  
+🌐 [https://www.axiorix.com/](https://www.axiorix.com/)
+
